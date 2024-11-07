@@ -1,4 +1,4 @@
-export function InputText({ type, label, placeholder, description, error, radius, size, withAsterisk}) {
+export function InputText({ name, value, type, label, placeholder, description, error, radius, size, withAsterisk }) {
     const styles = {
       xs: ['100px', '10px'],
       sm: ['200px', '20px'],
@@ -13,6 +13,8 @@ export function InputText({ type, label, placeholder, description, error, radius
           {label}
         </label>
         <input
+          name={name}
+          value={value}
           className={`form-control rounded-${radius}`}
           type={type}
           placeholder={placeholder}
