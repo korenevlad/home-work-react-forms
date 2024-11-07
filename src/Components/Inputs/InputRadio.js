@@ -7,13 +7,13 @@ export const InputRadio = () => {
       setSelectedOption(event.target.value);
     };
     return (
-      <div>
+      <>
         <label>
           <input type="radio" value="male" checked={selectedOption === 'male'} onChange={handleChange}/> Male
         </label>
         <label>
           <input type="radio" value="Female" checked={selectedOption === 'Female'} onChange={handleChange}/> Female
         </label>
-      </div>
+      </>
     );
   };

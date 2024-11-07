@@ -8,7 +8,6 @@ function App() {
       <div className="row justify-content-around">
         <Signin />  
         <Signup />
-        <Signup />
       </div>
     </div>
   );
